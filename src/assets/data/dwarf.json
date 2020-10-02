@@ -1,0 +1,97 @@
+{
+  "name": "Enanos",
+  "rules_army": [
+    {
+      "name": "Precisión enana",
+      "description": "Los ataques de Disparo efectuados por armas con esta regla especial no están sujetos al modificador de -1 para Impactar si efectúan una reacción a la carga de Aguantar y disparar.",
+      "rule": "No se sufre el -1 a Impactar cuando se reacciona a la carga con Aguantar y disparar."
+    },
+    {
+      "name": "Agravio ancestral",
+      "description": "",
+      "rule": ""
+    },
+    {
+      "name": "Avance imparable",
+      "description": "",
+      "rule": ""
+    },
+    {
+      "name": "Firmeza",
+      "description": "",
+      "rule": ""
+    },
+    {
+      "name": "Muro de escudos",
+      "description": "",
+      "rule": ""
+    }
+  ],
+  "commanders": [
+    {
+      "name": "Señor de los Enanos",
+      "points": "145",
+      "type": "Infantería",
+      "stats": {
+        "name": ["M", "HA", "HP", "F", "R", "H", "I", "A", "L"],
+        "stats": ["3", "7", "4", "4", "5", "3", "4", "4", "10"]
+      },
+      "equipment": ["Arma de mano", "Armadura de gromril"],
+      "rules": ["Agravio ancestral", "Avance imparable", "Firmeza", "Muro de escudos"],
+      "optional": [
+        {
+          "name": "weapons",
+          "data": [
+            { "name": "Arma a 2 manos", "point": "6" },
+            { "name": "Ballesta Enana", "point": "12" },
+            { "name": "Arcabuz Enano", "point": "12" }
+          ]
+        },
+        { "name": "Pistola Enana", "point": "6" },
+        { "name": "Escudo", "point": "3" },
+        {
+          "name": "others",
+          "data": [
+            { "name": "Piedra del Juramento", "point": "25" },
+            { "name": "Portadores de escudo", "point": "40" }
+          ]
+        }
+      ],
+      "magic_items_points": "125"
+    },
+    {
+      "name": "Señor de las runas",
+      "points": "",
+      "type": "Infantería",
+      "stats": {
+        "name": ["M", "HA", "HP", "F", "R", "H", "I", "A", "L"],
+        "stats": ["3", "7", "4", "4", "5", "3", "4", "4", "10"]
+      },
+      "equipment": [],
+      "rules": [],
+      "optional": [
+        {
+          "weapons": ["Arma a 2 manos", "Ballesta Enana", "Arcabuz Enano"]
+        },
+        "Pistola Enana",
+        "Escudo",
+        {
+          "mount": []
+        }
+      ],
+      "magic_items_points": ""
+    }
+  ],
+  "heroes": [
+    {}
+  ],
+  "basic": [
+    {}
+  ],
+  "special": [
+    {}
+  ],
+  "singular": [
+    {}
+  ]
+}
