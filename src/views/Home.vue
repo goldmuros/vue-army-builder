@@ -1,18 +1,25 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <v-row>
+      <v-col cols="4" v-for="(army, index) in armies" :key="index">
+        <card-army :datos="army"></card-army>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import CardArmy from "@/components/CardArmy.vue";
+import { mapState } from "vuex";
 
 export default {
   name: "Home",
+  computed: {
+    ...mapState("army", ["armies"])
+  },
   components: {
-    HelloWorld
+    CardArmy
   }
 };
 </script>
