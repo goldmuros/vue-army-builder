@@ -4,8 +4,6 @@
       contain
       class="white--text align-end"
       gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-      height="200"
-      width="400"
       :src="imagen"
     >
       <v-card-title v-text="datos.title"></v-card-title>
@@ -23,6 +21,9 @@ export default {
     return {
       imagen: require("../assets/armies/" + this.datos.src)
     };
+  },
+  mounted() {
+    // alert(this.$vuetify.breakpoint.name);
   }
 };
 </script>
