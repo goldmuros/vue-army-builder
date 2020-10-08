@@ -21,9 +21,6 @@ export default {
     return {
       imagen: require("../assets/armies/" + this.datos.src)
     };
-  },
-  mounted() {
-    // alert(this.$vuetify.breakpoint.name);
   }
 };
 </script>

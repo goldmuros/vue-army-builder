@@ -44,29 +44,6 @@ export default {
   },
   components: {
     CardArmy
-  },
-  methods: {
-    calcRowsPerPage() {
-      let container = document.getElementById("container");
-      let minItemHeight = 170;
-      if (container) {
-        let containerHeight = parseInt(container.clientHeight, 0);
-        this.rows = Math.floor(
-          Math.max(containerHeight, minItemHeight) / minItemHeight
-        );
-      } else this.rows = 3;
-    }
-  },
-  mounted() {
-    window.addEventListener("resize", () => {
-      if (!this.busy) {
-        this.busy = true;
-        setTimeout(() => {
-          this.calcRowsPerPage();
-          this.busy = false;
-        }, 300);
-      }
-    });
   }
 };
 </script>
