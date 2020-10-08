@@ -4,9 +4,9 @@
       contain
       class="white--text align-end"
       gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-      :src="imagen"
+      :src="image"
     >
-      <v-card-title v-text="datos.title"></v-card-title>
+      <v-card-title v-text="army.title"></v-card-title>
     </v-img>
   </v-card>
 </template>
@@ -15,11 +15,11 @@
 export default {
   name: "CardArmy",
   props: {
-    datos: Object
+    army: Object
   },
   data() {
     return {
-      imagen: require("../assets/armies/" + this.datos.src)
+      image: require("../assets/armies/" + this.army.src)
     };
   }
 };

@@ -6,7 +6,7 @@
         v-for="(army, index) in armies"
         :key="index"
       >
-        <card-army :datos="army"></card-army>
+        <card-army :army="army"></card-army>
       </v-col>
     </v-row>
   </div>

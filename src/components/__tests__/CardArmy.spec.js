@@ -5,12 +5,12 @@ describe("CardArmy", () => {
   it("read props", () => {
     const wrapper = shallowMount(CardArmy, {
       propsData: {
-        datos: {
+        army: {
           title: "Enanos",
           src: "dwarf.png"
         }
       }
     })
-    expect(wrapper.text()).toBe('Enanos');
+    expect(wrapper.text()).toBe("Enanos");
   });
 });
